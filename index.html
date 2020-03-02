@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Up, Down</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./data/entries.js"></script>
+    <script src="./log.js"></script>
+    <script src="./init.js"></script>
+
+    <script src="./handlers/save.js"></script>
+    <script src="./handlers/remove.js"></script>
+    <script src="./handlers/reset.js"></script>
+  </head>
+
+  <body>
+    <section id="user-interface" class="centered">
+      <h3>Numbery and NaNy</h3>
+      <hr />
+      <input id="input" type="text" value="" /> <br />
+      <button id="save">Save</button>
+      <button id="remove">Remove</button> <br />
+      <hr />
+      <br />
+      <!--<code id="number"></code> <br />-->
+      <div>
+        <div class="left">
+          <ul id="numbery"></ul>
+        </div>
+        <div class="right">
+          <ul id="nany"></ul>
+        </div>
+      </div>
+      <hr />
+      <button id="reset">reset</button>
+    </section>
+
+    <script src="./listeners/save.js"></script>
+    <script src="./listeners/remove.js"></script>
+    <script src="./listeners/reset.js"></script>
+  </body>
+</html>
